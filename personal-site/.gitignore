@@ -3,6 +3,8 @@
 node_modules
 yarn-error.log
 
+node_modules/
+
 # Build directory
 /public
 .DS_Store
