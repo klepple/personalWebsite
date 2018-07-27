@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
+import Link from 'gatsby-link'
 
 export default class MenuExampleVerticalSecondary extends Component {
   state = { activeItem: 'home' }
@@ -11,12 +12,12 @@ export default class MenuExampleVerticalSecondary extends Component {
 
     return (
       <Menu pointing secondary vertical>
-        <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
-        <Menu.Item
+        <Link to="/"><Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} /></Link>
+        <Link to="/blog"><Menu.Item 
           name='blog'
           active={activeItem === 'blog'}
           onClick={this.handleItemClick}
-        />
+        /></Link>
         <Menu.Item
           name='vocabulary'
           active={activeItem === 'vocabulary'}

@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
+const Footer = ({ siteTitle }) => (
   <div
     style={{
       background: '#c28285',
-      marginBottom: '1.45rem',
-      height: '200px'
+      marginTop: '3.45rem',
+      height: '100px'
     }}
   >
     <div
@@ -16,9 +16,9 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      
+      Coolio
     </div>
   </div>
 )
 
-export default Header
+export default Footer
