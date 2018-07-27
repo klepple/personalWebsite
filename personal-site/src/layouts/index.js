@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
-import 'semantic-ui-css/semantic.min.css';
+import 'semantic-ui-css/semantic.min.css'
 
 import Sky from '../components/sky'
 import MainMenu from '../components/menu'
 import Footer from '../components/footer'
 
 const Layout = ({ children, data }) => (
-  <div style={{backgroundColor:'#c28285'}}>
+  <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
